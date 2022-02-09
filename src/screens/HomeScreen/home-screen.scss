@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: "yellow";
+}
+.container main-section left-section right-section {
+  width: 100%;
+  padding: 5px;
+  // text-align: center;
+}
+.main-section {
+  text-align: center;
+//   border: 1px solid black;
+  width: 100%;
+  background: 'yellow';
+  height: 100%;
+}
+.left-section {
+  text-align: right;
+//   border: 1px solid black;
+  width: 100%;
+}
+.right-section {
+  text-align: left;
+//   border: 1px solid black;
+  width: 100%;
+}
