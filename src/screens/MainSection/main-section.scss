@@ -1,0 +1,18 @@
+@import "../../constants/colors";
+
+.container-main-section {
+    margin-top: 40px;
+}
+
+.container-posts {
+    display: flex;
+    justify-content: start;
+    background-color: $white;
+    margin: 0 40px;
+    padding: 20px;
+}
+
+.username {
+    margin-left: 10px;
+    font-weight: 600;   
+}

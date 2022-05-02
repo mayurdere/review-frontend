@@ -1,4 +1,5 @@
 import React from "react";
+import DarkMode from "../DarkMode/DarkMode";
 import './Header.scss'
 
 const Header = () => {
@@ -14,11 +15,10 @@ const Header = () => {
     <div>
       <div class="topnav" id="myTopnav">
         <a href="#home" class="active">
-          Home
+        Home
         </a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#contact">Logout</a>
+        <DarkMode/>
         <a href="javascript:void(0);" class="icon" onClick={myFunction}>
           <i class="fa fa-bars"></i>
         </a>

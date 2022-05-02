@@ -1,12 +1,18 @@
+@import "../../constants/colors";
+
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    // background-color: #f2f2f2;
+    background-color: $white;
+    // border-bottom: 5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
   .topnav a {
-    float: left;
+    float: right;
     display: block;
-    color: #f2f2f2;
+    // color: #f2f2f2;
+    color: $skyBlue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -19,8 +25,10 @@
   }
   
   .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: $skyBlue;
+    color: black;
+    border-radius: 5px;
+    margin-right: 10px;
   }
   
   .topnav .icon {

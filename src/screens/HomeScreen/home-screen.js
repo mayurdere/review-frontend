@@ -10,20 +10,19 @@ const HomeScreen = () => {
   return (
     <div>
       <Header/>
-      <div class="container">
-        <div class="left-section">
+      <div className="container">
+        <div className="left-section">
           <LeftSection />
         </div>
 
-        <div class="main-section">
+        <div className="main-section">
           <MainSection />
         </div>
 
-        <div class="right-section">
+        <div className="right-section">
           <RightSection />
         </div>
       </div>
-      <DarkMode/>
     </div>
   );
 };

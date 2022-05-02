@@ -1,0 +1,20 @@
+@import "../../constants/colors";
+
+.container-left-section {
+    margin-top: 40px;
+}
+
+.menus {
+    background: $white;
+    padding: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-left: 5px solid $skyBlue;
+}
+
+.menu-text {
+    text-align: center;
+}

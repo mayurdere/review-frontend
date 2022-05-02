@@ -1,12 +1,20 @@
 import React from "react";
+import { useEffect } from "react";
+import AppContext from "../../context/AppContext";
 import "./DarkMode.scss";
 
-const DarkMode = () => {
+const DarkMode = (props) => {
+  const { currentTheme } = React.useContext(AppContext);
+  const [currentThemeValue, setCurrentThemeValue] = currentTheme;
   let clickedClass = "clicked";
   const body = document.body;
   const lightTheme = "light";
   const darkTheme = "dark";
   let theme;
+
+  useEffect(() => {
+    console.log(currentThemeValue, 'currentThemeValue')
+  })
 
   if (localStorage) {
     theme = localStorage.getItem("theme");
@@ -24,11 +32,13 @@ const DarkMode = () => {
       body.classList.replace(darkTheme, lightTheme);
       e.target.classList.remove(clickedClass);
       localStorage.setItem("theme", "light");
+      setCurrentThemeValue("light")
       theme = lightTheme;
     } else {
       body.classList.replace(lightTheme, darkTheme);
       e.target.classList.add(clickedClass);
       localStorage.setItem("theme", "dark");
+      setCurrentThemeValue("dark")
       theme = darkTheme;
     }
   };
@@ -38,7 +48,7 @@ const DarkMode = () => {
       className={theme === "dark" ? clickedClass : ""}
       id="darkMode"
       onClick={(e) => switchTheme(e)}
-    ></button>
+    >Dark Mode</button>
   );
 };
 
